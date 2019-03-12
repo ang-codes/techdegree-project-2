@@ -1,3 +1,23 @@
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
 .project-picture{
   width: 400px;
+}
+
+.introduction {
+  width: 70%;
+  text-align: center;
 }

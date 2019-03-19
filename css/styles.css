@@ -1,11 +1,22 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
-  width: 80%;
-  margin: 0 auto;
+  font-family: 'Varela Round', sans-serif;
+	line-height: 1.4;
+	width:auto;
 }
 
 h2 {
   text-transform: uppercase;
+	text-align: center;
 }
 
 ul {
@@ -13,11 +24,115 @@ ul {
   text-transform: uppercase;
 }
 
-.project-picture{
+a {
+  text-decoration: none;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.project-picture,
+.portolio-picture {
   width: 400px;
 }
 
-.introduction {
-  width: 70%;
-  text-align: center;
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 2em;
+	padding-right: 2em;
 }
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+  border-top: 2px solid gray;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-nav li {
+		display: inline-block;
+		padding: 10px 15px 10px;
+	}
+
+	.card {
+		width: 100%;
+		padding-bottom: 25px;
+		background: #F5F5F5;
+		margin-bottom: 40px;
+	}
+
+	.portolio-picture {
+		float: right;
+		width: 40%;
+		padding-left: 1em;
+	}
+
+	.bio {
+		float: left;
+		width: 60%;
+		padding-right: 1em;
+		text-align: left;
+	}
+
+	.portfolio {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		padding-bottom: 25px;
+	}
+
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;
+	}
+	#contact {
+		display: block;
+		text-align: center;
+		padding-right: 60px;
+		padding-left: 60px;
+		padding-bottom: 25px;
+		background: #F5F5F5;
+	}
+
+	.footer-nav li {
+		float: right;
+		display: inline-block;
+		padding: 5px 5px 5px;
+	}
+	.main-footer {
+		background: #F5F5F5;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+/*@media (min-width: 1024px) {
+
+
+}*/

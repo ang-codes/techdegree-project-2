@@ -24,6 +24,11 @@ ul {
   text-transform: uppercase;
 }
 
+li {
+	display: inline-block;
+	padding-left: 15px;
+}
+
 a {
   text-decoration: none;
 }
@@ -36,9 +41,21 @@ a {
 /* ---- Navigation ---- */
 
 .project-picture,
-.portolio-picture {
+.portfolio-picture {
   width: 400px;
+	margin: auto;
 }
+
+.wrapper {
+	background: #F5F5F5;
+	text-align: center;
+}
+
+
+.name {
+	font-size: 20px;
+}
+
 
 /* ---- Layout Containers ---- */
 
@@ -55,12 +72,38 @@ a {
 
 }
 
+.card {
+	text-align: center;
+}
+
 .main-footer {
 	text-align: center;
 	padding: 2em 0;
   border-top: 2px solid gray;
 }
 
+.full li {
+	display: block;
+	padding: 5px;
+}
+
+.footer li {
+	display: none;
+}
+
+#contact {
+	display: block;
+	text-align: center;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom: 25px;
+	background: #F5F5F5;
+}
+
+.column {
+	padding: 5px;
+	padding-bottom: 15px;
+}
 
 /* =================================
   Media Queries
@@ -68,10 +111,6 @@ a {
 
 @media (min-width: 768px) {
 
-	.main-nav li {
-		display: inline-block;
-		padding: 10px 15px 10px;
-	}
 
 	.card {
 		width: 100%;
@@ -80,7 +119,7 @@ a {
 		margin-bottom: 40px;
 	}
 
-	.portolio-picture {
+	.portfolio-picture {
 		float: right;
 		width: 40%;
 		padding-left: 1em;
@@ -90,6 +129,7 @@ a {
 		float: left;
 		width: 60%;
 		padding-right: 1em;
+		padding-left: 2em;
 		text-align: left;
 	}
 
@@ -107,7 +147,9 @@ a {
 	  float: left;
 	  width: 50%;
 	  padding: 5px;
+		padding-bottom: 15px;
 	}
+
 	#contact {
 		display: block;
 		text-align: center;
@@ -117,22 +159,96 @@ a {
 		background: #F5F5F5;
 	}
 
-	.footer-nav li {
+	.top {
+		float: left;
+		display: inline-block;
+		padding-left: 2em;
+	}
+
+	.full {
 		float: right;
 		display: inline-block;
-		padding: 5px 5px 5px;
+		padding-right: 2em;
 	}
+
+	.full li {
+		display: inline-block;
+		padding: 5px;
+	}
+
 	.main-footer {
 		background: #F5F5F5;
 	}
 
-	.clearfix::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
 }
-/*@media (min-width: 1024px) {
 
 
-}*/
+
+
+@media (min-width: 1024px) {
+
+	.top {
+		float: left;
+		display: inline-block;
+		padding-left: 2em;
+	}
+
+	.full {
+		float: right;
+		padding-right: 2em;
+	}
+
+	.full li {
+		display: inline-block;
+		padding: 5px;
+	}
+
+	.card {
+		width: 100%;
+		padding-bottom: 25px;
+		background: #F5F5F5;
+		margin-bottom: 40px;
+	}
+
+	.portfolio-picture {
+		float: right;
+		width: 40%;
+		padding-left: 1em;
+	}
+
+	.bio {
+		float: left;
+		width: 60%;
+		padding-right: 1em;
+		padding-left: 2em;
+		text-align: left;
+	}
+
+	.portfolio {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		padding-bottom: 25px;
+	}
+
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+		padding-bottom: 15px;
+	}
+
+	.main-footer {
+		background: #F5F5F5;
+	}
+
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
